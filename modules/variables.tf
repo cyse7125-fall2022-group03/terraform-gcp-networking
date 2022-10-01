@@ -20,11 +20,11 @@ variable "zone" {
 variable "project" {
   description = "The project name"
   type        = string
-  default     = "csye7125-3"
+  default     = "csye712522"
 }
 
 variable "key-path" {
   description = "Path to ssh Key file"
   type        = string
-  default     = "/home/roadrunner/.ssh/id_ed25519.pub"
+  default     = "/Users/sandy/.ssh/id_rsa.pub"
 }

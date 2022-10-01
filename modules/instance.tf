@@ -9,7 +9,7 @@ resource "google_compute_instance" "default" {
     }
   }
   metadata = {
-    ssh-keys = "ubuntu:${file("${var.key_path}")}"
+    ssh-keys = "ubuntu:${file("${var.key-path}")}"
   }
 
   network_interface {
