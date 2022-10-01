@@ -1,13 +1,8 @@
-variable "service-name" {
-  description = "The service account name"
-  type        = string
-  default     = "service3"
+variable "ue1_private_subnet" {
+  default = "10.26.3.0/24"
 }
-
-variable "project" {
-  description = "The project name"
-  type        = string
-  default     = "csye7125-3"
+variable "ue1_public_subnet" {
+  default = "10.26.4.0/24"
 }
 
 variable "region" {
@@ -22,8 +17,14 @@ variable "zone" {
   default     = "us-east1-b"
 }
 
-variable "key-path" {
-  description = "key path for service acc json"
+variable "project" {
+  description = "The project name"
   type        = string
-  default     = "/Users/sandy/serviceacc.json"
+  default     = "csye7125-3"
+}
+
+variable "key-path" {
+  description = "Path to ssh Key file"
+  type        = string
+  default     = "/home/roadrunner/.ssh/id_ed25519.pub"
 }
