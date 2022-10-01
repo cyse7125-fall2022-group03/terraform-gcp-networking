@@ -7,7 +7,7 @@ variable "service-name" {
 variable "project" {
   description = "The project name"
   type        = string
-  default     = "csye7125-3"
+  default     = "csye712522"
 }
 
 variable "region" {
